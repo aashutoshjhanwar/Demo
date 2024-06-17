@@ -1,8 +1,14 @@
+<!-- Angular Material Tab Group with Two Tabs: "Add Data" and "View Data" -->
 <mat-tab-group [(selectedIndex)]="selectedIndex" (selectedTabChange)="onTabChange($event)">
+  <!-- "Add Data" Tab -->
   <mat-tab label="Add Data">
+      <!-- AddDataComponent is rendered within this tab -->
       <app-add-data></app-add-data>
   </mat-tab>
+  
+  <!-- "View Data" Tab -->
   <mat-tab label="View Data">
+      <!-- ViewDataComponent is rendered within this tab -->
       <app-view-data></app-view-data>
   </mat-tab>
 </mat-tab-group>

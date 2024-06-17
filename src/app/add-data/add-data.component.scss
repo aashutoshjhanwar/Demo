@@ -1,201 +1,211 @@
-body{
-    width: auto;
-    height: 100vh;
-    background: #ebedf2;
-    font-family: "Poppins", sans-serif;
+/* Style for the body */
+body {
+  width: auto;
+  height: 100vh;
+  background: #ebedf2;
+  font-family: "Poppins", sans-serif;
 }
 
-//   .container {
-//     width: 95%;
-//     height: 20vh;
-//     max-width: auto;
-//     background-color: white;
-//     border-radius: 15px;
-//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-//     overflow: hidden;
-//     transition: box-shadow 0.3s ease-in-out;
-//     margin: auto;
-//     margin-top: 10px;
-//   }
-  
-//   .container:hover {
-//     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.1);
-//   }
+/* Style for form groups */
+.formgroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 
-  .formgroup{
+/* Style for table container */
+.Table {
+  height: 100vh;
+}
+
+/* Style for data form */
+.data-form {
+  display: flex;
+  gap: 16px;
+  max-width: 80vw;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  justify-content: space-between;
+  height: 14vh;
+}
+
+/* Style for form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 33vw;
+}
+
+/* Style for form labels */
+label {
+  font-weight: bold;
+}
+
+/* Style for input fields */
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style for error messages */
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+/* Style for submit button */
+.submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  width: 10vw;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Style for disabled submit button */
+.submit-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Style for data list */
+.data-list {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 20px auto 0;
+}
+
+/* Style for data list items */
+.data-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style for required field indicator */
+.required {
+  color: red;
+}
+
+/* Style for table container */
+.table-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+  margin: 20px auto 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Style for data table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style for table header and cells */
+.data-table th, .data-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* Style for table header */
+.data-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Style for title */
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 29px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: cornflowerblue;
+}
+
+/* Style for empty state container */
+.empty-state {
+  width: 750px;
+  margin: 10px auto;
+  /* Style for empty state content */
+  &__content {
+    padding: 28px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: auto;
-  }
-  .Table{
-    height:100vh; 
-  }
-  .data-form {
-    display: flex;
-    gap: 16px;
-    max-width: 80vw;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    justify-content: space-between;
-    height: 14vh;
-
-  }
-  
-  .form-group {
-    display: flex;
     flex-direction: column;
-    gap: 8px;
-    width: 33vw;
-  }
-  
-  label {
-    font-weight: bold;
-  }
-  
-  input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .error {
-    color: red;
-    font-size: 12px;
-  }
-  
-  .submit-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007bff;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    width: 10vw;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  
-  .submit-button:disabled {
-    background-color: #aaa;
-    cursor: not-allowed;
-  }
-  
-  .data-list {
-    list-style: none;
-    padding: 0;
-    max-width: 400px;
-    margin: 20px auto 0;
-  }
-  
-  .data-list li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-  .required{
-    color: red;
-  }
 
-  .table-container {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width:80vw;
-    margin: 20px auto 0;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .data-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .data-table th, .data-table td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: left;
-  }
-  
-  .data-table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-  }
-  .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 29px;
-    font-weight: 500;
-    margin-bottom: 8px;
-    color: cornflowerblue;
-  }
-
-  .empty-state {
-    width: 750px;
-    margin: 10px auto;
-    // background: #ffffff;
-    // box-shadow: 1px 2px 10px #e1e3ec;
-    // border-radius: 4px;
-  
-    &__content {
-      padding: 28px;
+    /* Style for empty state icon */
+    .empty-state__icon {
+      width: 200px;
+      height: 200px;
       display: flex;
       align-items: center;
-      flex-direction: column;
-  
-      .empty-state__icon {
-        width: 200px;
-        height: 200px;
-        display: flex;
-        align-items: center;
-        border-radius: 200px;
-        justify-content: center;
-        background-color: #f7fafc;
-        box-shadow: 0px 2px 1px #e1e3ec;
-  
-        img {
-          width: 170px;
-        }
-      }
-  
-      .empty-state__message {
-        color: #38a169;
-        font-size: 1.5rem;
-        font-weight: 500;
-        margin-top: 0.85rem;
-      }
-  
-      .empty-state__help {
-        color: #a2a5b9;
-        font-size: 0.875rem;
+      border-radius: 200px;
+      justify-content: center;
+      background-color: #f7fafc;
+      box-shadow: 0px 2px 1px #e1e3ec;
+
+      /* Style for icon image */
+      img {
+        width: 170px;
       }
     }
-  }
-  
-  .credit {
-    color: #A2A5B9;
-    font-size: .75rem;
-    text-align: center;
-    
-    a {
-      color: #444;
+
+    /* Style for empty state message */
+    .empty-state__message {
+      color: #38a169;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 0.85rem;
+    }
+
+    /* Style for empty state help text */
+    .empty-state__help {
+      color: #a2a5b9;
+      font-size: 0.875rem;
     }
   }
-  .delete{
-    color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+}
+
+/* Style for credit text */
+.credit {
+  color: #A2A5B9;
+  font-size: .75rem;
+  text-align: center;
+  
+  /* Style for links in credit text */
+  a {
+    color: #444;
   }
+}
+
+/* Style for delete button */
+.delete {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

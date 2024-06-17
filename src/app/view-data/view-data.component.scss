@@ -1,0 +1,89 @@
+
+/* Style for the card container that holds the chart */
+.card {
+    width: 100%; /* Make the card take the full width of its container */
+    max-width: 850px; /* Set a maximum width for the card */
+    overflow: hidden; /* Prevent overflow within the card */
+    height: 70vh; /* Set the height of the card to 70% of the viewport height */
+    margin-top: 20px; /* Add some space above the card */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    justify-content: center; /* Center align items horizontally */
+}
+
+
+/* Style for the main container that centers the card */
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align items horizontally */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a raised effect */
+    width: 80vw; /* Set the container width to 80% of the viewport width */
+    margin: 20px auto 0; /* Center the container horizontally and add margin above */
+    padding: 20px; /* Add padding inside the container */
+    border: 1px solid #ccc; /* Add a light gray border */
+    border-radius: 8px; /* Round the corners of the container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add another shadow for a raised effect */
+    margin-bottom: 20px; /* Add margin below the container */
+}
+
+/* Style for the title within the card */
+.title {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center align the title text */
+    font-size: 29px; /* Set the font size for the title */
+    font-weight: bold; /* Make the title text bold */
+    color: #333; /* Set the text color to dark gray */
+    margin: 10px 0; /* Add margin above and below the title */
+    padding: 10px; /* Add padding inside the title element */
+    border-bottom: 2px solid #ddd; /* Add a bottom border to visually separate the title */
+}
+
+/* Style for an empty state component */
+.empty-state {
+    width: 750px; /* Set the width of the empty state component */
+    margin: 10px auto; /* Center the component horizontally and add margin above and below */
+    
+    &__content {
+      padding: 28px; /* Add padding inside the content */
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Center align items vertically */
+      flex-direction: column; /* Stack items vertically */
+  
+      .empty-state__icon {
+        width: 200px; /* Set the width of the icon container */
+        height: 200px; /* Set the height of the icon container */
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Center align items vertically */
+        border-radius: 200px; /* Make the icon container circular */
+        justify-content: center; /* Center align items horizontally */
+        background-color: #f7fafc; /* Set the background color */
+        box-shadow: 0px 2px 1px #e1e3ec; /* Add a subtle shadow for a raised effect */
+  
+        img {
+          width: 170px; /* Set the width of the image */
+        }
+      }
+      .empty-state__message {
+        color: #38a169; /* Set the text color to a green shade */
+        font-size: 1.5rem; /* Set the font size */
+        font-weight: 500; /* Set the font weight */
+        margin-top: 0.85rem; /* Add margin above the message */
+      }
+  
+      .empty-state__help {
+        color: #a2a5b9; /* Set the text color to a light gray */
+        font-size: 0.875rem; /* Set the font size */
+      }
+    }
+}
+
+/* Style for the credit section */
+.credit {
+    color: #A2A5B9; /* Set the text color to a light gray */
+    font-size: .75rem; /* Set the font size */
+    text-align: center; /* Center align the text */
+    
+    a {
+      color: #444; /* Set the link color to a dark gray */
+    }
+}
